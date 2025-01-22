@@ -10,6 +10,7 @@ body {
   margin: 0;
   padding: 0;
   height: 100%; /* Ensure the body has a height base */
+  font-family: 'UNSII', sans-serif;
 }
 
 .home-container {
@@ -39,21 +40,22 @@ body {
 }
 
 .logo {
-  width: 3vw; /* Adjust size relative to viewport width */
+  width: 2vw; /* Adjust size relative to viewport width */
   height: auto;
   margin-right: 10px;
 }
 
 .title {
-    width: 1vw;
+    width: 3vw;
     height: auto;
-    marigin-left: 10px;
+    margin-left: 10px;
 }
 
 .navbar h1 {
   font-size: 1.5rem;
   font-weight: bold;
   color: white;
+  font-family: 'UNSII', sans-serif;
 }
 
 /* Hamburger Icon */
@@ -83,6 +85,8 @@ body {
   max-height: 0;
   overflow: hidden;
   transition: max-height 0.5s ease-in-out;
+
+  font-family: 'UNSII', sans-serif;
 }
 
 .menu-items li {
@@ -106,3 +110,18 @@ body {
   display: block;
   max-height: 300px; /* Adjust to fit content */
 }
+
+@font-face {
+    font-family: 'UNSII';
+    src: url('../fonts/UNSII.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: 'UNSII';
+    src: url('../fonts/UNSII.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+  }
+  
