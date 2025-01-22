@@ -1,4 +1,4 @@
-/* Basic reset */
+/* ========== RESET & BASIC STYLES ========== */
 * {
   margin: 0;
   padding: 0;
@@ -7,43 +7,28 @@
 
 body {
   font-family: Arial, sans-serif;
-  background-color: #f4f4f9;
-  color: #333;
 }
 
-/* Home container */
 .home-container {
-  display: flex;
-  flex-direction: column;
-  height: 100vh;
-}
-
-/* Menu styles */
-.menu {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background-color: #333;
-  padding: 15px 30px;
-  color: white;
-  position: sticky;
-  top: 0;
-  z-index: 100;
-}
-
-.menu.open .menu-items {
-  display: flex;  /* Show menu items when the "open" class is applied */
-  flex-direction: column;
-  position: absolute;
-  top: 60px;
-  left: 0;
   width: 100%;
-  background-color: #333;
-  padding: 20px 0;
-  z-index: 10;
+  height: 100vh;
+  background-color: #f0f0f0;
 }
 
-.menu .logo-title {
+/* ========== NAVIGATION MENU ========== */
+.menu {
+  background-color: #333;
+  padding: 10px 20px;
+
+  /* Key for dropdown positioning: */
+  position: relative; 
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* ---------- Logo & Title ---------- */
+.logo-title {
   display: flex;
   align-items: center;
 }
@@ -51,7 +36,7 @@ body {
 .logo {
   width: 40px;
   height: auto;
-  margin-right: 15px;
+  margin-right: 10px;
 }
 
 .menu h1 {
@@ -60,59 +45,50 @@ body {
   color: white;
 }
 
-/* Menu items */
-.menu-items {
-  display: none; /* Hide menu items by default */
-  list-style-type: none;
-  flex-grow: 1;
-  width: 100%;
+/* ---------- Hamburger Icon ---------- */
+.hamburger {
+  font-size: 1.5rem;
+  color: white;
+  cursor: pointer;
 }
 
+/* ========== MENU ITEMS ========== */
+/* Hidden by default */
+.menu-items {
+  display: none;    /* Hide menu initially */
+  list-style: none;
+  margin: 0;
+  padding: 0;
+
+  /* Position absolutely so it drops down from the nav */
+  position: absolute;
+  top: 60px;        /* Adjust if your nav is taller or shorter */
+  right: 20px;      /* Align dropdown to the right */
+  background-color: #333;
+  border: 1px solid #444;
+
+  /* Make it a vertical list (dropdown style) */
+  flex-direction: column;
+}
+
+/* Show the items in a vertical layout when open */
+.menu-items.open {
+  display: flex;    /* Switch to flex to show items */
+}
+
+/* Optional: spacing, hover effects, etc. */
 .menu-items li {
-  margin-right: 20px;
+  margin: 0;
 }
 
 .menu-items li a {
+  display: block;
   color: white;
   text-decoration: none;
+  font-size: 1.1rem;
   padding: 10px 20px;
-  font-size: 1rem;
 }
 
 .menu-items li a:hover {
   background-color: #555;
-}
-
-/* Hamburger icon */
-.hamburger {
-  display: block; /* Always show the hamburger icon */
-  font-size: 30px;
-  cursor: pointer;
-  color: white;
-}
-
-/* Media Queries: Always show hamburger icon */
-@media (max-width: 768px) {
-  .hamburger {
-    display: block; /* Ensure hamburger icon is always visible */
-  }
-
-  .menu-items.open {
-    display: flex; /* Show menu when 'open' class is applied */
-  }
-}
-
-/* Desktop view (above 768px) */
-@media (min-width: 769px) {
-  .menu-items {
-    display: none; /* Hide menu items by default on desktop */
-  }
-
-  .hamburger {
-    display: block; /* Show hamburger icon */
-  }
-
-  .menu-items.open {
-    display: flex; /* Display menu when 'open' class is applied */
-  }
 }
