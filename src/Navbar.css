@@ -29,7 +29,7 @@ body {
   z-index: 10;
 
   /* Set height to 5vh */
-  height: 5vh;
+  height: 15vh;
 }
 
 /* Logo and Title */
@@ -39,7 +39,7 @@ body {
 }
 
 .logo {
-  width: 5vw; /* Adjust size relative to viewport width */
+  width: 1vw; /* Adjust size relative to viewport width */
   height: auto;
   margin-right: 10px;
 }
