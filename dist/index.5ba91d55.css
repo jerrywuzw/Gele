@@ -40,6 +40,12 @@ body {
   margin-right: 10px;
 }
 
+.title {
+  marigin-left: 10px;
+  width: 1vw;
+  height: auto;
+}
+
 .navbar h1 {
   color: #fff;
   font-size: 1.5rem;

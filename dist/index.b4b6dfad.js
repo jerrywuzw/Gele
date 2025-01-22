@@ -27286,8 +27286,10 @@ var _jsxDevRuntime = require("react/jsx-dev-runtime");
 var _react = require("react");
 var _reactDefault = parcelHelpers.interopDefault(_react);
 var _navbarCss = require("./navbar.css");
-var _geleLogoPng = require("./assets/Gele-logo.png"); // Adjust path if needed
+var _geleLogoPng = require("./assets/Gele-logo.png");
 var _geleLogoPngDefault = parcelHelpers.interopDefault(_geleLogoPng);
+var _geleTitlePng = require("./assets/Gele-title.png");
+var _geleTitlePngDefault = parcelHelpers.interopDefault(_geleTitlePng);
 var _s = $RefreshSig$();
 const Navbar = ()=>{
     _s();
@@ -27307,20 +27309,22 @@ const Navbar = ()=>{
                         className: "logo"
                     }, void 0, false, {
                         fileName: "src/Navbar.jsx",
-                        lineNumber: 16,
+                        lineNumber: 17,
                         columnNumber: 9
                     }, undefined),
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
-                        children: "Gele"
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
+                        src: (0, _geleTitlePngDefault.default),
+                        alt: "Gele Title",
+                        className: "title"
                     }, void 0, false, {
                         fileName: "src/Navbar.jsx",
-                        lineNumber: 17,
+                        lineNumber: 18,
                         columnNumber: 9
                     }, undefined)
                 ]
             }, void 0, true, {
                 fileName: "src/Navbar.jsx",
-                lineNumber: 15,
+                lineNumber: 16,
                 columnNumber: 7
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -27329,7 +27333,7 @@ const Navbar = ()=>{
                 children: "\u2630"
             }, void 0, false, {
                 fileName: "src/Navbar.jsx",
-                lineNumber: 21,
+                lineNumber: 22,
                 columnNumber: 7
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("ul", {
@@ -27341,12 +27345,12 @@ const Navbar = ()=>{
                             children: "Home"
                         }, void 0, false, {
                             fileName: "src/Navbar.jsx",
-                            lineNumber: 27,
+                            lineNumber: 28,
                             columnNumber: 13
                         }, undefined)
                     }, void 0, false, {
                         fileName: "src/Navbar.jsx",
-                        lineNumber: 27,
+                        lineNumber: 28,
                         columnNumber: 9
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
@@ -27355,24 +27359,24 @@ const Navbar = ()=>{
                             children: "Agenda"
                         }, void 0, false, {
                             fileName: "src/Navbar.jsx",
-                            lineNumber: 28,
+                            lineNumber: 29,
                             columnNumber: 13
                         }, undefined)
                     }, void 0, false, {
                         fileName: "src/Navbar.jsx",
-                        lineNumber: 28,
+                        lineNumber: 29,
                         columnNumber: 9
                     }, undefined)
                 ]
             }, void 0, true, {
                 fileName: "src/Navbar.jsx",
-                lineNumber: 26,
+                lineNumber: 27,
                 columnNumber: 7
             }, undefined)
         ]
     }, void 0, true, {
         fileName: "src/Navbar.jsx",
-        lineNumber: 13,
+        lineNumber: 14,
         columnNumber: 5
     }, undefined);
 };
@@ -27387,7 +27391,7 @@ $RefreshReg$(_c, "Navbar");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","./navbar.css":"gnpMP","./assets/Gele-logo.png":"cF8Y5","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"gnpMP":[function() {},{}],"cF8Y5":[function(require,module,exports,__globalThis) {
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","./navbar.css":"gnpMP","./assets/Gele-logo.png":"cF8Y5","./assets/Gele-title.png":"4sOQh","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"gnpMP":[function() {},{}],"cF8Y5":[function(require,module,exports,__globalThis) {
 module.exports = require("253f3532873cf586").getBundleURL('byUka') + "Gele-logo.79eebc47.png" + "?" + Date.now();
 
 },{"253f3532873cf586":"lgJ39"}],"lgJ39":[function(require,module,exports,__globalThis) {
@@ -27425,7 +27429,10 @@ exports.getBundleURL = getBundleURLCached;
 exports.getBaseURL = getBaseURL;
 exports.getOrigin = getOrigin;
 
-},{}],"gkKU3":[function(require,module,exports,__globalThis) {
+},{}],"4sOQh":[function(require,module,exports,__globalThis) {
+module.exports = require("1ee7454d344fb574").getBundleURL('byUka') + "Gele-title.625e50b8.png" + "?" + Date.now();
+
+},{"1ee7454d344fb574":"lgJ39"}],"gkKU3":[function(require,module,exports,__globalThis) {
 exports.interopDefault = function(a) {
     return a && a.__esModule ? a : {
         default: a

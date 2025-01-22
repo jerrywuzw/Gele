@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import './navbar.css';
-import geleLogo from './assets/Gele-logo.png'; // Adjust path if needed
+import geleLogo from './assets/Gele-logo.png';
+import geleTitle from './assets/Gele-title.png';
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -14,7 +15,7 @@ const Navbar = () => {
       {/* Left: Logo and Title */}
       <div className="logo-title">
         <img src={geleLogo} alt="Gele Logo" className="logo" />
-        <h1>Gele</h1>
+        <img src={geleTitle} alt="Gele Title" className="title" />
       </div>
 
       {/* Right: Hamburger Icon */}
