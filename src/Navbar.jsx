@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
-import './navbar.css'; // Create a separate CSS file for Navbar styles
-import geleLogo from '../assets/Gele-logo.png'; // Adjust path if needed
+import './navbar.css';
+import geleLogo from './assets/Gele-logo.png'; // Adjust path if needed
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
