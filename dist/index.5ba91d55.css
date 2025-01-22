@@ -23,7 +23,7 @@ body {
   background-color: #333;
   justify-content: space-between;
   align-items: center;
-  height: 5vh;
+  height: 10vh;
   padding: 0 20px;
   display: flex;
   position: relative;
@@ -35,7 +35,7 @@ body {
 }
 
 .logo {
-  width: 5vw;
+  width: 3vw;
   height: auto;
   margin-right: 10px;
 }
