@@ -1,0 +1,86 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  .navbar {
+    background-color: #333;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    position: relative; /* For dropdown alignment */
+    z-index: 10;
+  }
+  
+  /* Logo and Title */
+  .logo-title {
+    display: flex;
+    align-items: center;
+  }
+  
+  .logo {
+    width: 40px;
+    height: auto;
+    margin-right: 10px;
+  }
+  
+  .navbar h1 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: white;
+  }
+  
+  /* Hamburger Icon */
+  .hamburger {
+    font-size: 1.5rem;
+    color: white;
+    cursor: pointer;
+  }
+  
+  /* Dropdown Menu */
+  .menu-items {
+    display: none; /* Hidden by default */
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  
+    /* Dropdown should span the full width of the navbar */
+    width: 100%;
+    background-color: #333;
+  
+    /* Position below the navbar */
+    position: absolute;
+    top: 100%; /* Align directly below the navbar */
+    left: 0; /* Align with the navbar's left edge */
+  
+    /* For smooth dropdown animation */
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s ease-in-out;
+  }
+  
+  .menu-items li {
+    text-align: right; /* Align text to the right */
+    padding: 15px 20px;
+  }
+  
+  .menu-items li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2rem;
+    display: block; /* Make the entire row clickable */
+  }
+  
+  .menu-items li a:hover {
+    background-color: #555;
+  }
+  
+  /* When Dropdown is Open */
+  .menu-items.open {
+    display: block;
+    max-height: 300px; /* Adjust to fit content */
+  }
+  

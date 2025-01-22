@@ -1,37 +1,15 @@
-import React, { useState } from 'react';
+import React from 'react';
+import Navbar from './Navbar'; // Adjust the path as needed
 import './home.css';
 
 const Home = () => {
-  const [isMenuOpen, setIsMenuOpen] = useState(false);
-
-  const toggleMenu = () => {
-    setIsMenuOpen(!isMenuOpen);
-  };
-
   return (
     <div className="home-container">
-      <nav className="menu">
-        {/* Left side: Logo and Title */}
-        <div className="logo-title">
-        <img 
-          src={"/static/img/Gele-Logo.png" }
-          alt="Gele Logo" 
-        />
-
-          <h1>Gele</h1>
-        </div>
-
-        {/* Right side: Hamburger icon */}
-        <div className="hamburger" onClick={toggleMenu}>
-          ☰
-        </div>
-
-        {/* Dropdown Menu */}
-        <ul className={`menu-items ${isMenuOpen ? 'open' : ''}`}>
-          <li><a href="#home">Home</a></li>
-          <li><a href="#agenda">Agenda</a></li>
-        </ul>
-      </nav>
+      <Navbar />
+      <main className="main-content">
+        <h1>Welcome to Gele</h1>
+        <p>This is the homepage content.</p>
+      </main>
     </div>
   );
 };

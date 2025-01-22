@@ -1,4 +1,4 @@
-/* ========== RESET & BASIC STYLES ========== */
+/* General Reset */
 * {
   margin: 0;
   padding: 0;
@@ -11,23 +11,25 @@ body {
 
 .home-container {
   width: 100%;
-  height: 100vh;
+  min-height: 100vh;
   background-color: #f0f0f0;
 }
 
-/* ========== NAVIGATION MENU ========== */
+/* Navigation Menu */
 .menu {
   background-color: #333;
-  padding: 10px 20px;
-
-  /* Key for dropdown positioning: */
-  position: relative; 
   display: flex;
-  align-items: center;
   justify-content: space-between;
+  align-items: center;
+  position: relative; /* Ensure dropdown aligns correctly */
 }
 
-/* ---------- Logo & Title ---------- */
+/* Remove padding from .menu and apply it inside child elements */
+.menu > * {
+  padding: 10px 20px;
+}
+
+/* Logo and Title */
 .logo-title {
   display: flex;
   align-items: center;
@@ -45,50 +47,61 @@ body {
   color: white;
 }
 
-/* ---------- Hamburger Icon ---------- */
+/* Hamburger Icon */
 .hamburger {
   font-size: 1.5rem;
   color: white;
   cursor: pointer;
 }
 
-/* ========== MENU ITEMS ========== */
-/* Hidden by default */
+/* Dropdown Menu */
 .menu-items {
-  display: none;    /* Hide menu initially */
+  display: none; /* Hidden by default */
   list-style: none;
   margin: 0;
   padding: 0;
 
-  /* Position absolutely so it drops down from the nav */
-  position: absolute;
-  top: 60px;        /* Adjust if your nav is taller or shorter */
-  right: 20px;      /* Align dropdown to the right */
+  /* Full width matching .menu */
+  width: 100%;
   background-color: #333;
-  border: 1px solid #444;
 
-  /* Make it a vertical list (dropdown style) */
-  flex-direction: column;
+  /* Positioned below the menu */
+  position: absolute;
+  top: 100%; /* Start right below .menu */
+  left: 0; /* Align with .menu's left edge */
+
+  /* Smooth dropdown animation */
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.5s ease-in-out;
 }
 
-/* Show the items in a vertical layout when open */
-.menu-items.open {
-  display: flex;    /* Switch to flex to show items */
-}
-
-/* Optional: spacing, hover effects, etc. */
+/* Dropdown Menu Items */
 .menu-items li {
-  margin: 0;
+  text-align: right; /* Align text to the right */
+  padding: 15px 20px; /* Add consistent padding */
 }
 
 .menu-items li a {
-  display: block;
   color: white;
   text-decoration: none;
-  font-size: 1.1rem;
-  padding: 10px 20px;
+  font-size: 1.2rem;
+  display: block; /* Make entire row clickable */
 }
 
 .menu-items li a:hover {
   background-color: #555;
+}
+
+/* When Dropdown is Open */
+.menu-items.open {
+  display: block;
+  max-height: 300px; /* Adjust to fit menu content */
+}
+
+/* Responsive Adjustment (Optional) */
+@media (max-width: 768px) {
+  .menu-items.open {
+    max-height: 200px; /* Adjust height for smaller screens */
+  }
 }
