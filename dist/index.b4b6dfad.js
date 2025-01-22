@@ -27342,7 +27342,7 @@ const Navbar = ()=>{
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
                         children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
                             href: "#home",
-                            children: "Home"
+                            children: "HOME"
                         }, void 0, false, {
                             fileName: "src/Navbar.jsx",
                             lineNumber: 28,
@@ -27356,7 +27356,7 @@ const Navbar = ()=>{
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
                         children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
                             href: "#agenda",
-                            children: "Agenda"
+                            children: "AGENDA"
                         }, void 0, false, {
                             fileName: "src/Navbar.jsx",
                             lineNumber: 29,

@@ -1,0 +1,14 @@
+.video-wrapper {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.homepage-video {
+  width: 100%;
+  height: auto;
+  max-height: 80vh; /* Adjust as needed */
+}

@@ -25,8 +25,8 @@ const Navbar = () => {
 
       {/* Dropdown Menu */}
       <ul className={`menu-items ${isMenuOpen ? 'open' : ''}`}>
-        <li><a href="#home">Home</a></li>
-        <li><a href="#agenda">Agenda</a></li>
+        <li><a href="#home">HOME</a></li>
+        <li><a href="#agenda">AGENDA</a></li>
       </ul>
     </nav>
   );

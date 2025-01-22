@@ -40,13 +40,13 @@ body {
 }
 
 .logo {
-  width: 2vw; /* Adjust size relative to viewport width */
+  width: 1vw; /* Adjust size relative to viewport width */
   height: auto;
   margin-right: 10px;
 }
 
 .title {
-    width: 3vw;
+    width: 5vw;
     height: auto;
     margin-left: 10px;
 }
@@ -97,7 +97,7 @@ body {
 .menu-items li a {
   color: white;
   text-decoration: none;
-  font-size: 1.2rem;
+  font-size: 10rem;
   display: block; /* Make the entire row clickable */
 }
 
@@ -112,15 +112,15 @@ body {
 }
 
 @font-face {
-    font-family: 'UNSII';
-    src: url('../fonts/UNSII.ttf') format('truetype');
+    font-family: 'UNS';
+    src: url('./fonts/UNS.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
   }
   
   @font-face {
-    font-family: 'UNSII';
-    src: url('../fonts/UNSII.ttf') format('truetype');
+    font-family: 'UNS';
+    src: url('./fonts/UNS.ttf') format('truetype');
     font-weight: bold;
     font-style: normal;
   }
