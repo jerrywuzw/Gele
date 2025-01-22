@@ -27238,19 +27238,18 @@ const Home = ()=>{
                     className: "logo-title",
                     children: [
                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
-                            src: "/logo-placeholder.png",
-                            alt: "Logo",
-                            className: "logo"
+                            src: "/static/img/Gele-Logo.png",
+                            alt: "Gele Logo"
                         }, void 0, false, {
                             fileName: "src/screens/Home.jsx",
                             lineNumber: 16,
-                            columnNumber: 11
+                            columnNumber: 9
                         }, undefined),
                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
                             children: "Gele"
                         }, void 0, false, {
                             fileName: "src/screens/Home.jsx",
-                            lineNumber: 17,
+                            lineNumber: 21,
                             columnNumber: 11
                         }, undefined)
                     ]
@@ -27265,7 +27264,7 @@ const Home = ()=>{
                     children: "\u2630"
                 }, void 0, false, {
                     fileName: "src/screens/Home.jsx",
-                    lineNumber: 21,
+                    lineNumber: 25,
                     columnNumber: 9
                 }, undefined),
                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("ul", {
@@ -27277,12 +27276,12 @@ const Home = ()=>{
                                 children: "Home"
                             }, void 0, false, {
                                 fileName: "src/screens/Home.jsx",
-                                lineNumber: 27,
+                                lineNumber: 31,
                                 columnNumber: 15
                             }, undefined)
                         }, void 0, false, {
                             fileName: "src/screens/Home.jsx",
-                            lineNumber: 27,
+                            lineNumber: 31,
                             columnNumber: 11
                         }, undefined),
                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
@@ -27291,18 +27290,18 @@ const Home = ()=>{
                                 children: "Agenda"
                             }, void 0, false, {
                                 fileName: "src/screens/Home.jsx",
-                                lineNumber: 28,
+                                lineNumber: 32,
                                 columnNumber: 15
                             }, undefined)
                         }, void 0, false, {
                             fileName: "src/screens/Home.jsx",
-                            lineNumber: 28,
+                            lineNumber: 32,
                             columnNumber: 11
                         }, undefined)
                     ]
                 }, void 0, true, {
                     fileName: "src/screens/Home.jsx",
-                    lineNumber: 26,
+                    lineNumber: 30,
                     columnNumber: 9
                 }, undefined)
             ]

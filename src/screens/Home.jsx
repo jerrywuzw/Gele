@@ -13,7 +13,11 @@ const Home = () => {
       <nav className="menu">
         {/* Left side: Logo and Title */}
         <div className="logo-title">
-          <img src="/lGele-logo.png" alt="Logo" className="logo" />
+        <img 
+          src={"/static/img/Gele-Logo.png" }
+          alt="Gele Logo" 
+        />
+
           <h1>Gele</h1>
         </div>
 
